@@ -1,0 +1,68 @@
+@import "index.scss";
+
+table {
+  font-family: $font-montserrat;
+  thead {
+    tr {
+      border: none;
+
+      th {
+        padding: 1rem;
+        background: rgb(255, 255, 255) !important;
+        text-transform: uppercase;
+        border: none;
+        color: #71839b;
+        font-weight: 400 !important;
+        font-size: 0.9em !important;
+      }
+
+      th.checkbox {
+        background: #f9fbfc !important;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border: none;
+      border-bottom: 1px soild #f0f5ff !important;
+
+      &:hover {
+        td {
+          background: #f8faff !important;
+          // font-weight: 500 !important;
+          color: #4040ff;
+        }
+      }
+      td {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-bottom: 1px soild #f0f5ff !important;
+        font-weight: 400 !important;
+        font-size: 0.9em !important;
+        background: rgb(255, 255, 255) !important;
+      }
+      td.checkbox {
+        background: #f9fbfc !important;
+        width: 1%;
+        div {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      td.dropdown {
+        width: 2%;
+        .dropdown-wrapper {
+          .dropdown {
+            .dropdown-toggle-secondary {
+              background: transparent !important;
+              // padding: 0.75rem 1rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

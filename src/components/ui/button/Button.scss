@@ -1,0 +1,64 @@
+@import "index.scss";
+
+.btn {
+  min-width: 100px;
+  background: #4040ff !important;
+  border-radius: 10px;
+  border: none !important;
+  outline: none !important;
+  padding: 0.8rem 2rem !important;
+  color: #fff !important;
+  font-family: $font-inter !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  // margin: 0.5rem 0;
+  box-shadow: none !important;
+  -webkit-transition: ease-out 1.2s;
+  -moz-transition: ease-out 1.2s;
+  transition: ease-out 1.2s;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+  text-align: center !important;
+
+  svg {
+    margin: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    path {
+      stroke: #fff !important;
+    }
+  }
+
+  .spinner-border {
+    margin-right: 0.5rem;
+  }
+
+  &:hover {
+    box-shadow: inset 400px 0 0 0 #ffffff54;
+  }
+}
+
+.header {
+ 
+}
+
+button.secondary {
+  background: #f0f5ff !important;
+  border: none;
+  outline: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #000;
+  svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    path {
+      stroke: #71839b;
+    }
+  }
+}

@@ -1,0 +1,162 @@
+@import "index.scss";
+
+.container-wrapper.teacher-create-assignment {
+  section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    // place-items: center;
+    form {
+      gap: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      max-width: 30rem;
+      min-width: 30rem;
+      //   margin-top: 5rem;
+      .fields {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        .input_wrapper {
+          width: 100%;
+          .upload-wrapper {
+            min-width: 100% !important;
+            max-width: 100% !important;
+            margin: 0 !important;
+            .file_upload__wrapper {
+              width: 100%;
+              height: 15rem !important;
+              box-shadow: none;
+              background: #fff;
+              label {
+                height: 100% !important;
+                svg {
+                  margin-top: 0 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.container-wrapper.teacher-create-assignment-type {
+  section {
+    .jodit-react-container {
+      height: 100%;
+      min-height: 100%;
+      overflow: hidden;
+      border-radius: 1rem;
+      .jodit-container {
+        height: 100% !important;
+        min-height: 100% !important;
+        overflow: hidden;
+        border-radius: 1rem;
+
+        .jodit-toolbar__box {
+          // border: 1px solid black !important;
+          height: auto !important;
+          min-height: fit-content !important;
+          max-height: fit-content !important;
+          background: #fff !important;
+          .jodit-toolbar-editor-collection {
+            background: #fff !important;
+
+            padding: 1rem !important;
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 1rem !important;
+            // border: 1px solid green;
+            .jodit-ui-group {
+              // border: 1px solid red;
+              display: flex !important;
+              align-items: center !important;
+              justify-content: space-between !important;
+              // flex-direction: ;
+              gap: 0.5rem !important;
+
+              &::after {
+                display: none !important;
+              }
+            }
+            .jodit-toolbar-button {
+              background: #f0f5ff !important;
+              margin: 0 !important;
+            }
+            .jodit-toolbar-button__button[aria-pressed="true"]:not([disabled]) {
+              background: #4040ff;
+              outline: 0;
+
+              svg {
+                path {
+                  fill: #fff;
+                }
+              }
+            }
+          }
+        }
+        .jodit-workplace {
+          height: 100% !important;
+          min-height: 100% !important;
+          overflow: scroll !important;
+        }
+        .jodit-status-bar {
+          .jodit-status-bar__item {
+            &:nth-last-child(1) {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.container-wrapper.teachers-assignments {
+  section {
+    .assignments__wrapper {
+      height: 100% !important;
+      .assignment__wrapper {
+        
+        width: 100%;
+        height: 3.5rem;
+        display: flex;
+        //   flex-direction: column;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        background: #fff;
+        margin-bottom: 1rem !important;
+
+        .assignment_subject_color_code {
+          width: 0.5rem;
+          height: 100%;
+          border-top-left-radius: 0.2rem;
+          border-bottom-left-radius: 0.2rem;
+        }
+        .assignment_subject {
+          width: 5rem;
+          height: 100%;
+          display: grid;
+          place-items: center;
+          background: #d8e4ff;
+        }
+        .assignment_body {
+          padding: 1rem !important;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+@import "../../../index.scss";
+
+input {
+  outline: none !important;
+  background: transparent;
+  box-shadow: none !important;
+  // border: 1.5px solid $ol-primary;
+  border: 1px solid #e6e8ec;
+}
+
+input:focus {
+  // border: 1.5px solid rgb(93, 93, 255) !important;
+  border: 1px solid #4040ff !important;
+  // border: 1px solid #4442d0 !important;
+  // background: #f4f7ff !important;
+}
+
+input.error {
+  border: 1.5px solid red !important;
+}
+
+input.success {
+  border: 1.5px solid rgb(6, 82, 6) !important;
+}
+
+.form-label {
+  font-family: $font-montserrat !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: $txt-grey;
+}
+
+.form-control,
+.form-select {
+  padding: 12px 16px !important;
+  // border: 1px solid $border-primary !important;
+  border: 1px solid #e6e8ec !important;
+  border-radius: 0.6rem !important;
+  font-family: $font-inter !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  color: #2d3748;
+  outline: 0px !important;
+  box-shadow: none !important;
+  margin-bottom: 0.5rem;
+
+  &::placeholder {
+    font-weight: 500 !important;
+    font-size: 16px !important;
+  }
+}
+
+.input_wrapper {
+  position: relative;
+
+  .error_message {
+    color: red;
+    font-size: 0.8em;
+  }
+
+  .eye-icon {
+    position: absolute;
+    top: 2.8rem;
+    right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    path {
+      stroke: #e6e8ec;
+    }
+
+    &:hover {
+      path {
+        stroke: $border-primary;
+      }
+    }
+  }
+}
+
+input[type="password"] {
+  font-size: 16px !important;
+}
+
+.form-check-input[type="checkbox"] {
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  box-shadow: none !important;
+}
+
+.form-check-input[type="radio"] {
+  width: 20px !important;
+  height: 20px !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  box-shadow: none !important;
+  &:checked {
+    background-image: url("../../../assets/RadioInnerCircle.svg") !important;
+    background-color: #fff !important;
+    // border: 1.5px solid $bg-primary !important;
+    border: 1.5px solid #4040ff !important;
+  }
+}
+
+.form-check {
+  border: 1px solid #e6e8ec;
+  border-radius: 0.6rem !important;
+  padding: 12px 1rem !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem;
+  background: #fff;
+
+  .form-check-input {
+    margin: 0 !important;
+  }
+}
+
+// .form-check {
+//   padding: 12px 20px !important;
+//   border: 1px solid $ol-primary;
+//   border-radius: 10px;
+//   display: flex !important;
+//   align-items: center !important;
+//   justify-content: flex-start !important;
+//   &:hover {
+//     cursor: pointer;
+//     border-color: #615fca !important;
+//   }
+
+//   .form-check-input {
+//     margin: 0 !important;
+//     margin-right: 1rem !important;
+//     padding: 0 !important;
+//   }
+
+//   .form-check-label {
+//     font-family: "Inter";
+//     font-weight: 500;
+//     font-size: 20px;
+//     color: #000000;
+//   }
+// }
+
+.radio_check_input {
+  border: 1px solid #4040ff;
+  .form-check-label {
+    color: #4040ff;
+  }
+}
+
+.error__message {
+  color: red !important;
+}
+
+.input__wrapper.dark {
+  .form-check {
+    label {
+      color: #fff;
+    }
+  }
+}

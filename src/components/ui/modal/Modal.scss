@@ -1,0 +1,95 @@
+@import "index.scss";
+
+.modal {
+  .modal-dialog {
+    .modal-content {
+      border-radius: 1rem;
+      .modal-header {
+        padding: 1rem 2rem !important;
+        border-bottom-color: #e6e8ec;
+        .modal-title {
+          font-family: $font-montserrat;
+          font-size: 1.4em;
+          font-weight: 600;
+        }
+        .btn-close {
+          box-shadow: none;
+          opacity: 0.2 !important;
+
+          &:hover {
+            opacity: 0.4 !important;
+          }
+        }
+      }
+      .modal-body {
+        padding: 2rem !important;
+      }
+
+      .modal-footer {
+        border-top-color: #e6e8ec;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+
+        .footer__left,
+        .footer__right {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+        .btn,
+        button {
+          margin: 0;
+          background: #4040ff;
+          color: #fff;
+          border: none;
+          outline: none;
+          padding: 0.5rem 1rem !important;
+          border-radius: 0.5rem;
+          font-weight: 600;
+          -webkit-transition: ease-out 1.2s;
+          -moz-transition: ease-out 1.2s;
+          transition: ease-out 1.2s;
+          // padding: 0.5rem 2rem !important;
+
+          text-align: center !important;
+          .spinner-border {
+            margin-right: 0.5rem;
+          }
+        }
+        button.secondary {
+          background: #f0f5ff !important;
+          color: #000 !important;
+        }
+      }
+    }
+  }
+}
+
+.modal.logout-confirmation-modal,
+.modal.promote-confirmation-modal {
+  .modal-dialog {
+    .modal-content {
+      .modal-body {
+        min-height: 10rem !important;
+        max-height: 10rem !important;
+        display: grid !important;
+        place-items: center !important;
+      }
+    }
+  }
+}
+
+.modal.document-preview-modal {
+  .modal-dialog {
+    .modal-content {
+      .modal-body {
+        min-height: 72dvh !important;
+        max-height: 72dvh !important;
+        padding: 0 !important;
+        overflow: auto !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+// ================== GLOABL VARIABLES & SETTINGS ==================
+
+/* ===== Light Mode ===== */
+/* Font Family's */
+$font-inter: "Inter", sans-serif;
+$font-source-code-pro: "Source Code Pro", monospace;
+$font-montserrat: "Montserrat", sans-serif;
+
+/* Backgrounds */
+$bg-primary: #3c37ff;
+$bg-secondary: #2520e3;
+
+/* Outlines */
+$ol-primary: #d9dae5;
+$ol-secondary: #e4e4ef;
+$ol-light: #f9f8fd;
+
+/* Outlines Selected One's */
+$ols-primary: #322fb2;
+$ols-secondary: #7874fe;
+$ols-light: #d3cfff;
+
+// BORDERS
+$border-primary: #d3d4dd;
+
+/* Text */
+$txt-primary: #fff;
+$txt-secondary: #e6f0ff;
+$txt-grey: #6d7987;
+
+/* Button */
+$btn-primary: #3a38fd;
+$btn-secondary: #f4f7ff;
+
+// asterisk
+$asterisk-col: rgb(255, 56, 56);
+
+/* ===== Dark Mode ===== */
+
+$light-bg-primary: #fff;
+$light-bg-secondary: #f6f7f9;
+$light-bg-tertiary: #ebecf0;
+$light-bg-waring: #fcf5e8;
+$light-badge-bg: #e9f6fe;
+
+$light-text-primary: #24282e;
+$light-text-secondary: #414655;
+$light-text-warning: #bb6f2e;
+
+$light-border: #ebecf0;
+
+$dark-bg-primary: #24272e;
+$dark-bg-secondary: #353a45;
+$dark-bg-tertiary: #353a45;
+$dark-bg-warning: #3f312c;
+$dark-badge-bg: #2b353f;
+
+$dark-text-primary: #f6f7f9;
+$dark-text-secondary: #ebecf0;
+$dark-text-warning: #ce823c;
+
+$dark-border: #363a44;
+
+$text-white: #fff;
+$text-red: #c6474e;
+$text-blue: #77b7d7;
+$text-dark: #9aa1b1;
+$text-oceanblue: #86d9ca;
+$text-darkblue: #112e5f;
+
+*,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*,
+body {
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}

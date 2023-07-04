@@ -1,0 +1,73 @@
+@import "index.scss";
+
+.container-wrapper.admin-dashboard,
+.container-wrapper.teacher-dashboard,
+.container-wrapper.student-dashboard {
+  section {
+    display: grid;
+    place-items: center;
+    .cards-wrapper {
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+      .row {
+        gap: 2rem;
+        margin: 0;
+        .col {
+          padding: 0;
+          max-width: 30rem !important;
+          min-width: 30rem !important;
+          .card {
+            height: 100%;
+            border: none;
+            border-radius: 0.5rem;
+            color: #fff;
+            font-family: $font-montserrat;
+            background: linear-gradient(
+              45deg,
+              rgb(21, 87, 205),
+              rgb(90, 225, 255)
+            );
+
+            .card-header {
+              padding: 1rem;
+              text-align: center;
+              background: transparent;
+              font-size: 1.5em;
+              font-weight: 600;
+              border-bottom: 1px solid #c5dfff;
+            }
+            .card-body {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+              padding: 2rem;
+              ul {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                min-height: 6.5rem;
+                gap: 0.5rem;
+
+                li {
+                  font-size: 1.2em;
+                  list-style-type: circle;
+                }
+              }
+              button {
+                width: 100%;
+                color: #607489;
+                background: #fff;
+                padding: 0.6rem 1rem;
+                border: none;
+                outline: none;
+                border-radius: 0.4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

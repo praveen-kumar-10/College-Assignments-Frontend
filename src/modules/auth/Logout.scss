@@ -1,0 +1,56 @@
+@import "index.scss";
+
+.logout-container-wrapper {
+  height: 100dvh;
+  background-color: #f0f5ff;
+  display: grid;
+  place-items: center;
+  font-family: $font-montserrat;
+
+  .wrapper {
+    background: #fff;
+    min-width: 30rem;
+    max-width: 30rem;
+    // max-height: 30rem;
+    border-radius: 1rem;
+    box-shadow: 20px 20px 60px #d6def1, -20px -20px 60px #e7ebff;
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 2rem !important;
+      border-bottom: 2px solid #f0f5ff;
+
+      .logo {
+        width: fit-content;
+        height: 3rem;
+      }
+    }
+
+    section {
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      flex-direction: column;
+      .check-circle-icon {
+        width: 8rem;
+        height: 8rem;
+        path {
+          stroke: green;
+        }
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
